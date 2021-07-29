@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+	{% include "head.html" %}
+
+</head>
+<body class="body">
+	
+	<!-- header -->
+	{% include "header.html" %}
+	<!-- end header -->
+
+	<!-- home -->
+	{% include "section.home.html" %}
+	<!-- end home -->
+
+	<!-- content -->
+    {% block content %}
+	
+    {% endblock content %}
+	<!-- end content -->
+
+	<!-- expected premiere -->
+    {% block comming %}
+	
+    {% endblock comming %}
+	<!-- end expected premiere -->
+
+	<!-- partners -->
+        <!-- "section.partners.html" -->
+	<!-- end partners -->
+
+	<!-- footer -->
+	{% include "footer.html" %}
+	<!-- end footer -->
+
+	<!-- JS -->
+	{% include "js.html" %}
+</body>
+
+</html>
