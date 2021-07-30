@@ -14,6 +14,7 @@ def index(request):
         'new_releases': new_releases,
     }
     return render(request, "movies/index.html", context)
+    
 
 def detail_view(request, pk):
     movie = Movie.objects.get(id=pk)
